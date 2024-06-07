@@ -3,31 +3,41 @@
         "id": 1,
         "Provider": "Dr. Kwong",
         "Reason": "Blood pressure",
-        "timestamp": "2024-06-01T11:14:45Z"
+        "timestamp": "2024-06-01T11:14:45Z",
+        "details": "Routine checkup to monitor blood pressure levels and assess cardiovascular health."
+
     },
     {
         "id": 2,
         "Provider": "Dr. Smith",
         "Reason": "Diabetes check",
-        "timestamp":"2024-05-23T11:14:45Z"
+        "timestamp":"2024-05-23T11:14:45Z",
+        "details": "Scheduled appointment to evaluate blood sugar levels and overall diabetic management."
+
     },
     {
         "id": 3,
         "Provider": "Dr. Johnson",
         "Reason": "Annual physical",
-        "timestamp": "2024-04-19T11:14:45Z"
+        "timestamp": "2024-04-19T11:14:45Z",
+        "details": "Comprehensive examination conducted as part of the yearly health assessment."
+
     },
     {
         "id": 4,
         "Provider": "Dr. Brown",
         "Reason": "Cholesterol",
-        "timestamp": "2024-04-05T11:14:45Z"
+        "timestamp": "2024-04-05T11:14:45Z",
+        "details": "Evaluation of cholesterol levels and discussion of lifestyle modifications or medication."
+
     },
     {
         "id": 5,
         "Provider": "Dr. Taylor",
         "Reason": "Asthma",
-        "timestamp": "2024-03-28T11:14:45Z"
+        "timestamp": "2024-03-28T11:14:45Z",
+        "details": "Follow-up visit to manage asthma symptoms, review medication effectiveness, and adjust treatment plan."
+
     },
 
     
@@ -35,61 +45,81 @@
             "id": 6,
             "Provider": "Dr. Lee",
             "Reason": "Follow-up",
-            "timestamp": "2024-03-20"
+            "timestamp": "2024-03-20",
+            "details": "Follow-up appointment scheduled to monitor the progress after previous treatment."
         },
         {
             "id": 7,
             "Provider": "Dr. Martinez",
             "Reason": "Back pain",
-            "timestamp": 1712988650
+            "timestamp": "2024-03-12",
+            "details": "Patient complains of lower back pain persisting for two weeks. Recommended rest and pain management."
+
         },
         {
             "id": 8,
             "Provider": "Dr. Garcia",
             "Reason": "Headache",
-            "timestamp": 1712988700
+            "timestamp": "2024-03-03",
+            "details": "Frequent headaches reported, possibly stress-related. Advised relaxation techniques and hydration."
+
         },
         {
             "id": 9,
             "Provider": "Dr. Wilson",
             "Reason": "Skin rash",
-            "timestamp": 1712988750
+            "timestamp": "2024-02-25",
+            "details": "Patient presents with a rash on the arms and legs. Suspected allergic reaction, prescribed antihistamines."
+
         },
         {
             "id": 10,
             "Provider": "Dr. Kim",
             "Reason": "Allergy",
-            "timestamp": 1712988800
+            "timestamp": "2024-02-21",
+            "details": "Seasonal allergy symptoms observed, including sneezing and itchy eyes. Prescribed allergy medication."
+
         },
         {
             "id": 11,
             "Provider": "Dr. Patel",
             "Reason": "Stomach ache",
-            "timestamp": 1712988850
+            "timestamp": "2024-02-10",
+            "details": "Complaints of abdominal discomfort and bloating. Suggested dietary changes and monitoring."
+
         },
         {
             "id": 12,
             "Provider": "Dr. Chen",
             "Reason": "Cough",
-            "timestamp": 1712988900
+            "timestamp": "2023-12-17",
+            "details": "Persistent cough with phlegm reported. Prescribed cough syrup and advised rest."
+
         },
         {
             "id": 13,
             "Provider": "Dr. Rodriguez",
             "Reason": "Sore throat",
-            "timestamp": 1712988950
+            "timestamp": "2023-12-02",
+            "details": "Sore throat and difficulty swallowing noted. Prescribed throat lozenges and advised warm gargles."
+
         },
         {
             "id": 14,
             "Provider": "Dr. Davis",
             "Reason": "Fever",
-            "timestamp": 1712989000
+            "timestamp": "2023-12-09",
+            "details": "High fever recorded at 102°F. Conducted tests to rule out bacterial infection and prescribed fever reducers."
+
         },
         {
             "id": 15,
             "Provider": "Dr. Green",
             "Reason": "Flu shot",
-            "timestamp": 1712989050
+            "timestamp": "2023-11-15",
+            "details": "Administered annual flu vaccination to prevent influenza infection during the upcoming flu season."
+
+
         }
     
     

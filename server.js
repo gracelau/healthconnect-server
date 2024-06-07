@@ -11,7 +11,8 @@ app.use(express.json());
 
 
 
-app.use("/history/appointments", historyRoutes);
+app.use("/", historyRoutes);
+
 
 
 app.get('/', (req, res) => {
