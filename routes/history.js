@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const fs = require ("fs");
+const path = require('path');
 const appts = require("../data/appointments.json")
 const meds =require("../data/medications.json")
 const refs = require("../data/referrals.json")
 const port = process.env.PORT || process.argv[2] || 8080
 
 
+const dataPath = path.join(__dirname, 'appointments.json');
 //middleware to check request body
 
 const requestValid = (req, res, next) =>  {
@@ -64,12 +66,36 @@ router.get("/history/appointments", (req, res) => {
   })
 
   //PUT for single appointment
+
+
   router.put('/history/appointments/:id', requestValid, async(req,res) => {
     const update= req.body;
     const{id} = req.params;
 
     if (req.body.id) {
       return res.status(400).json({ message: `You cannot update this id.` });
+    }
+    try {
+      const appointments = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+      const index = appointments.findIndex((a) => a.id === parseInt(id));
+  
+      // return an error if the id was not found
+      if (index === -1) {
+        return res.status(404).json({
+          message: `Warehouse with ID ${id} not found`,
+        });
+      }
+  
+      // update the warehouse record
+      appointments[index] = { ...appointments[index], ...update };
+      fs.writeFileSync(dataPath, JSON.stringify(appointments, null, 2), 'utf-8');
+  
+      res.status(200).json(appointments[index]);
+    } catch (err) {
+      console.error('PUT request to /history/appointments/:id failed: ', err);
+      res.status(500).json({
+        message: 'Internal server error',
+      });
     }
     
   });
