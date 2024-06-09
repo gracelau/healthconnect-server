@@ -65,7 +65,7 @@ router.put('/history/appointments/:id', requestValid, async (req, res) => {
   }
   try {
     const appointments = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-    const index = appointments.findIndex((a) => a.id === parseInt(id));
+    const index = appointments.findIndex((a) => a.id === id);
 
     // return an error if the id was not found
     if (index === -1) {
