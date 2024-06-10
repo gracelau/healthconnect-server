@@ -65,7 +65,7 @@ router.put('/history/appointments/:id', requestValid, async (req, res) => {
   }
   try {
     const appointments = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-    const index = appointments.findIndex((a) => a.id === id);
+    const index = appointments.findIndex((a) => `${a.id}` === `${id}`);
 
     // return an error if the id was not found
     if (index === -1) {
@@ -106,6 +106,14 @@ router.post('/history/appointments/', (req, res) => {
 
 });
 
+// DELETE - delete appointment
+router.delete('/history/appointments/:id', (req, res) => {
+  const { id } = req.params;
+  const appts = getAppts();
+  const newAppts = appts.filter(appt => `${appt.id}` !== `${id}`);
+  fs.writeFileSync(dataPath, JSON.stringify(newAppts, null, 2), 'utf-8');
+  res.json({});
+});
 
 router.get("/history/medications", (req, res) => {
   res.json(meds);
@@ -120,4 +128,3 @@ router.get("/referrals", (req, res) => {
 
 
 module.exports = router;
-
