@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "Name": "Dr. John Smith",
+      "Specialization": "Cardiology"
+    },
+    {
+      "id": 2,
+      "Name": "Dr. Emily Johnson",
+      "Specialization": "Neurology"
+    },
+    {
+      "id": 3,
+      "Name": "Dr. Michael Brown",
+      "Specialization": "Orthopedics"
+    },
+    {
+      "id": 4,
+      "Name": "Dr. Sarah Davis",
+      "Specialization": "Dermatology"
+    },
+    {
+      "id": 5,
+      "Name": "Dr. David Wilson",
+      "Specialization": "Gastroenterology"
+    },
+    {
+      "id": 6,
+      "Name": "Dr. Laura Martinez",
+      "Specialization": "Endocrinology"
+    },
+    {
+      "id": 7,
+      "Name": "Dr. James Anderson",
+      "Specialization": "Pediatrics"
+    },
+    {
+      "id": 8,
+      "Name": "Dr. Jessica Taylor",
+      "Specialization": "Ophthalmology"
+    },
+    {
+      "id": 9,
+      "Name": "Dr. Robert Thomas",
+      "Specialization": "Psychiatry"
+    },
+    {
+      "id": 10,
+      "Name": "Dr. Mary Hernandez",
+      "Specialization": "Rheumatology"
+    }
+  ]
+  
